@@ -8,20 +8,83 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.hamburger {
-    width: 48px;
-    height: 42px;
-    border: 1px solid #eeeeef;
-    border-radius: 2px;
-    box-shadow: 0 0 2px #eeeeef;
-    padding: 10px 10px;
-}
+@media (max-width: 767px){
+    .hamburger {
+        width: 48px;
+        height: 42px;
+        border: 1px solid #eeeeef;
+        border-radius: 2px;
+        box-shadow: 0 0 2px #eeeeef;
+        padding: 10px 10px;
+        }
 
-.hamburger-stripe {
-    background-color: #6799ff;
-    height: 3px;
-    margin-bottom: 5px;
+    .hamburger-stripe {
+        background-color: #6799ff;
+        height: 3px;
+        margin-bottom: 5px;
+    }
 }
 
 /* Add your CSS here */
 
+nav {
+    width: 100%;
+    height: 25px;
+    display: flex;
+}
+
+.navbar {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+}
+
+.courses {
+    display: flex
+}
+
+li.logo {
+    flex: 2;
+    text-align: center;
+}
+
+li.courses {
+    flex: 1
+}
+
+li.howitworks {
+    flex: 1
+}
+
+li.reviews {
+    flex: 1
+}
+
+li.reviews {
+    flex: 1
+}
+
+li.signin {
+    flex: 7;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.yesDisplay {
+    display: inline-block;
+}
