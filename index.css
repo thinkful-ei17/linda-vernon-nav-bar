@@ -34,10 +34,19 @@ nav {
 }
 
 .navbar {
-    width: 100%;
+    /* width: 100%; */
+    flex: 7;
     height: 25px;
     display: flex;
     justify-content: space-around;
+}
+
+.navbar-secondary {
+    flex: 3;
+    height: 25px;
+    /* background-color: black; */
+    justify-content: flex-end;
+
 }
 
 ul {
@@ -54,9 +63,14 @@ a {
     display: flex
 }
 
+li {
+  text-align: center;
+  margin: 0 10px 0 10px;
+}
+
 li.logo {
     flex: 2;
-    text-align: center;
+    min-width: 140px;
 }
 
 li.courses {
@@ -64,7 +78,8 @@ li.courses {
 }
 
 li.howitworks {
-    flex: 1
+    flex: 1;
+    min-width: 100px;
 }
 
 li.reviews {
@@ -73,18 +88,37 @@ li.reviews {
 
 li.reviews {
     flex: 1
-}
-
-li.signin {
-    flex: 7;
-    text-align: right;
-    padding-right: 50px;
 }
 
 .noDisplay {
     display: none;
 }
+/*  ------------------------------------------- */
 
-.yesDisplay {
-    display: inline-block;
+ul.courses  {
+  margin-top: 100px;
+  display: flex;
+  width: 100vw;
+}
+
+ul.howitworks {
+  margin-top: 100px;
+  display: flex;
+  width: 100vw;
+}
+
+img {
+  width: 75px;
+}
+
+span {
+  display: block;
+}
+
+ul.courses li {
+  flex: 3;
+}
+
+ul.howitworks  li {
+  flex: 3;
 }
