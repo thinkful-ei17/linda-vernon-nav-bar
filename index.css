@@ -7,9 +7,27 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
+/* small screen */
 @media (max-width: 767px){
+
+    .noDisplay {
+        display: none;
+    }
+
+    img {
+      display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
     .hamburger {
+
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
         width: 48px;
         height: 42px;
         border: 1px solid #eeeeef;
@@ -23,102 +41,159 @@ body {
         height: 3px;
         margin-bottom: 5px;
     }
+
+  .mainNav {
+      width: 100vw;
+      height: 70px;
+      border-bottom: 1px blue solid;
+      margin: 0;
+
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    li.courses {
+      margin-top: 15px;
+      padding: 0;
+    }
+
+    .navbar li, .navbar-secondary li {
+      border-bottom: 1px blue solid;
+      width: 100vw;
+
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      padding-left: 10px;
+    }
+
+    nav.courses, nav.howitworks {
+      position: relative;
+
+    }
+
+
+    li.logo {
+      display: block;
+      border: none;
+      margin-left: 50px;
+      margin-top: 20px;
+      padding: 0;
+
+    }
+
 }
 
-/* Add your CSS here */
+/* big screen*/
+@media (min-width: 767px){
+  nav {
+      width: 100%;
+      height: 25px;
+      display: flex;
+  }
 
-nav {
-    width: 100%;
-    height: 25px;
+  .navbar {
+      /* width: 100%; */
+      flex: 7;
+      height: 25px;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .navbar-secondary {
+      flex: 3;
+      height: 25px;
+      /* background-color: black; */
+      justify-content: flex-end;
+
+  }
+
+  ul {
+      display: flex;
+      list-style-type: none;
+      flex-direction: row;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  .courses {
+      display: flex
+  }
+
+  li {
+    /* text-align: center; */
+    margin: 0 10px 0 10px;
+  }
+
+  li.logo {
+      flex: 2;
+      min-width: 140px;
+  }
+
+  li.courses {
+      flex: 1;
+  }
+
+  li.howitworks {
+      flex: 1;
+      min-width: 100px;
+  }
+
+  li.reviews {
+      flex: 1
+  }
+
+  li.reviews {
+      flex: 1
+  }
+
+  .noDisplay {
+      display: none;
+  }
+  /*  ------------------------------------------- */
+
+  nav.courses, nav.howitworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+
+
+  ul.courses  {
+    margin-top: 100px;
     display: flex;
-}
+    width: 100vw;
+  }
 
-.navbar {
-    /* width: 100%; */
-    flex: 7;
-    height: 25px;
+  ul.howitworks {
+    margin-top: 100px;
     display: flex;
-    justify-content: space-around;
-}
+    width: 100vw;
+  }
 
-.navbar-secondary {
+  img {
+    width: 75px;
+  }
+
+  span {
+    display: block;
+  }
+
+  ul.courses li {
     flex: 3;
-    height: 25px;
-    /* background-color: black; */
-    justify-content: flex-end;
+  }
 
-}
+  ul.howitworks  li {
+    flex: 3;
+  }
 
-ul {
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
-}
-
-a {
-    text-decoration: none;
-}
-
-.courses {
-    display: flex
-}
-
-li {
-  text-align: center;
-  margin: 0 10px 0 10px;
-}
-
-li.logo {
-    flex: 2;
-    min-width: 140px;
-}
-
-li.courses {
-    flex: 1
-}
-
-li.howitworks {
-    flex: 1;
-    min-width: 100px;
-}
-
-li.reviews {
-    flex: 1
-}
-
-li.reviews {
-    flex: 1
-}
-
-.noDisplay {
-    display: none;
-}
-/*  ------------------------------------------- */
-
-ul.courses  {
-  margin-top: 100px;
-  display: flex;
-  width: 100vw;
-}
-
-ul.howitworks {
-  margin-top: 100px;
-  display: flex;
-  width: 100vw;
-}
-
-img {
-  width: 75px;
-}
-
-span {
-  display: block;
-}
-
-ul.courses li {
-  flex: 3;
-}
-
-ul.howitworks  li {
-  flex: 3;
 }
