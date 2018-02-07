@@ -155,9 +155,9 @@ body {
       flex: 1
   }
 
-  .noDisplay {
-      display: none;
-  }
+  nav.courses.noDisplay, nav.howitworks.noDisplay {
+    display: none;
+}
   /*  ------------------------------------------- */
 
   nav.courses, nav.howitworks {
